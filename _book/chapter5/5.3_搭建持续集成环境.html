@@ -1,0 +1,1058 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>搭建持续集成环境 | 课程介绍</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter6/index.html" />
+    
+    
+    <link rel="prev" href="../chapter5/5.2_gtest单元测试.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5.3"
+        data-chapter-title="搭建持续集成环境"
+        data-filepath="chapter5/5.3_搭建持续集成环境.md"
+        data-basepath=".."
+        data-revision="Wed Oct 31 2018 20:17:52 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+                
+                <li>
+                    <a href="http://www.0voice.com" target="blank" class="custom-link">ntyTcp</a>
+                </li>
+            
+            
+
+            
+            <li class="divider"></li>
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/index.html">
+            
+                
+                    <a href="../chapter1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        课程介绍和项目介绍
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/1.1_课程介绍.html">
+            
+                
+                    <a href="../chapter1/1.1_课程介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        课程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/1.2_项目介绍.html">
+            
+                
+                    <a href="../chapter1/1.2_项目介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        项目介绍
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/index.html">
+            
+                
+                    <a href="../chapter2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        搭建开发环境
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/2.1_安装和配置linux系统.html">
+            
+                
+                    <a href="../chapter2/2.1_安装和配置linux系统.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        安装和配置linux系统
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/2.2_linux命令.html">
+            
+                
+                    <a href="../chapter2/2.2_linux命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        linux命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/2.3_安装开发工具.html">
+            
+                
+                    <a href="../chapter2/2.3_安装开发工具.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        安装开发工具
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chapter2/2.4_搭建开发环境.html">
+            
+                
+                    <a href="../chapter2/2.4_搭建开发环境.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        搭建开发环境
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/index.html">
+            
+                
+                    <a href="../chapter3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        项目文档
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/3.1_如何管理需求.html">
+            
+                
+                    <a href="../chapter3/3.1_如何管理需求.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        如何管理需求
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/3.1_如何架构设计.html">
+            
+                
+                    <a href="../chapter3/3.1_如何架构设计.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        如何架构设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/3.3_共享单车架构设计.html">
+            
+                
+                    <a href="../chapter3/3.3_共享单车架构设计.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        共享单车的架构
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/index.html">
+            
+                
+                    <a href="../chapter4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        敏捷开发
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/4.1_敏捷概述.html">
+            
+                
+                    <a href="../chapter4/4.1_敏捷概述.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        敏捷概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/4.2_SCRUM介绍.html">
+            
+                
+                    <a href="../chapter4/4.2_SCRUM介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        SCRUM介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/4.3_我们应该认识到.html">
+            
+                
+                    <a href="../chapter4/4.3_我们应该认识到.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        我们应该认识到
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="chapter5/index.html">
+            
+                
+                    <a href="../chapter5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        持续集成
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="chapter5/5.1_lua语言介绍.html">
+            
+                
+                    <a href="../chapter5/5.1_lua语言介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        lua语言介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="chapter5/5.2_gtest单元测试.html">
+            
+                
+                    <a href="../chapter5/5.2_gtest单元测试.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        gtest单元测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.3" data-path="chapter5/5.3_搭建持续集成环境.html">
+            
+                
+                    <a href="../chapter5/5.3_搭建持续集成环境.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        搭建持续集成环境
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="chapter6/index.html">
+            
+                
+                    <a href="../chapter6/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        产品版本管理之git
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="chapter7/index.html">
+            
+                
+                    <a href="../chapter7/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        shell脚本
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="chapter7/7.1_什么是shell.html">
+            
+                
+                    <a href="../chapter7/7.1_什么是shell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        什么是shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="chapter7/7.2_Shell编程.html">
+            
+                
+                    <a href="../chapter7/7.2_Shell编程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Shell编程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="chapter7/7.3_启动脚本实例.html">
+            
+                
+                    <a href="../chapter7/7.3_启动脚本实例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        启动脚本实例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="chapter8/index.html">
+            
+                
+                    <a href="../chapter8/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        项目编译
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="chapter8/8.1_编译原理.html">
+            
+                
+                    <a href="../chapter8/8.1_编译原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        编译原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="chapter8/8.2_makefile.html">
+            
+                
+                    <a href="../chapter8/8.2_makefile.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        makefile
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="chapter8/8.3_cmake.html">
+            
+                
+                    <a href="../chapter8/8.3_cmake.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        cmake
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="chapter8/8.4_GNU_make.html">
+            
+                
+                    <a href="../chapter8/8.4_GNU_make.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        GNU make
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="chapter9/index.html">
+            
+                
+                    <a href="../chapter9/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        调试技巧
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="chapter9/9.1_gdb调试.html">
+            
+                
+                    <a href="../chapter9/9.1_gdb调试.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        gdb调试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="chapter9/9.2_coredump.html">
+            
+                
+                    <a href="../chapter9/9.2_coredump.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        coredump
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="chapter9/9.3_内存泄漏检查.html">
+            
+                
+                    <a href="../chapter9/9.3_内存泄漏检查.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        内存泄漏检查
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="chapter10/index.html">
+            
+                
+                    <a href="../chapter10/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        项目配置文件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="chapter10/10.1_ini配置.html">
+            
+                
+                    <a href="../chapter10/10.1_ini配置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        ini配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="chapter10/10.2_xml配置.html">
+            
+                
+                    <a href="../chapter10/10.2_xml配置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        xml配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="chapter10/10.3_lua配置.html">
+            
+                
+                    <a href="../chapter10/10.3_lua配置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        lua配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="chapter11/index.html">
+            
+                
+                    <a href="../chapter11/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        项目日志
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="chapter11/11.1_重定向.html">
+            
+                
+                    <a href="../chapter11/11.1_重定向.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        重定向
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="chapter11/11.2_log4cpp.html">
+            
+                
+                    <a href="../chapter11/11.2_log4cpp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        log4cpp
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="chapter11/11.3_大型项目的日志架构.html">
+            
+                
+                    <a href="../chapter11/11.3_大型项目的日志架构.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        分布式系统的集中式日志解决方案
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="chapter12/index.html">
+            
+            <span><b>12.</b> 进程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="chapter12/12.1_进程的概念.html">
+            
+                
+                    <a href="../chapter12/12.1_进程的概念.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                        进程的概念
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="chapter12/12.2_如何产生一个进程.html">
+            
+                
+                    <a href="../chapter12/12.2_如何产生一个进程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                        如何产生一个进程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="chapter12/12.3_僵尸孤儿守护进程.html">
+            
+                
+                    <a href="../chapter12/12.3_僵尸孤儿守护进程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                        僵尸、孤儿和守护进程
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="chapter13/index.html">
+            
+            <span><b>13.</b> 进程间通信</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1" data-path="chapter13/13.1_管道与命名管道.html">
+            
+            <span><b>13.1.</b> 管道与命名管道</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" data-path="chapter13/13.2_共享内存.html">
+            
+            <span><b>13.2.</b> 共享内存</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.3" data-path="chapter13/13.3_信号量.html">
+            
+            <span><b>13.3.</b> 信号量</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.4" data-path="chapter13/13.4_信号.html">
+            
+            <span><b>13.4.</b> 信号</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="chapter14/index.html">
+            
+                
+                    <a href="../chapter14/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        网络协议
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="14.1" data-path="chapter14/14.1_俗话网络通信.html">
+            
+                
+                    <a href="../chapter14/14.1_俗话网络通信.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.1.</b>
+                        
+                        俗话网络通信
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="chapter14/14.2_网络7层协议与4层协议.html">
+            
+                
+                    <a href="../chapter14/14.2_网络7层协议与4层协议.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.2.</b>
+                        
+                        网络7层协议与4层协议
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >课程介绍</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="53-&#x642D;&#x5EFA;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x73AF;&#x5883;">5.3 &#x642D;&#x5EFA;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x73AF;&#x5883;</h1>
+<ul>
+<li><a href="#1">&#x524D;&#x8A00;</a></li>
+<li><a href="#2">&#x4F20;&#x7EDF;&#x5F00;&#x53D1;&#x65B9;&#x5F0F;&#x7684;&#x4E0D;&#x8DB3;</a></li>
+<li><a href="#3">&#x6301;&#x7EED;&#x96C6;&#x6210;&#x7684;&#x597D;&#x5904;</a></li>
+</ul>
+<h2 id="1">&#x524D;&#x8A00;</h2>
+
+<p>&#x4EC0;&#x4E48;&#x662F;&#x6301;&#x7EED;&#x96C6;&#x6210;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6301;&#x7EED;&#x96C6;&#x6210;&#xFF1F;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x642D;&#x5EFA;&#x8D77;&#x6765;&#x7684;&#x4E00;&#x4E2A;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x73AF;&#x5883;&#xFF1A;<br><img src="5.3_1.jpg" alt="&#x6301;&#x7EED;&#x96C6;&#x6210;"></p>
+<h2 id="2">&#x4F20;&#x7EDF;&#x5F00;&#x53D1;&#x65B9;&#x5F0F;&#x7684;&#x4E0D;&#x8DB3;</h2>
+
+<p><img src="5.3_2.png" alt="&#x4F20;&#x7EDF;&#x7684;&#x5F00;&#x53D1;&#x65B9;&#x5F0F;"></p>
+<p>&#x4E0D;&#x8DB3;&#xFF1A;</p>
+<ul>
+<li><p>&#x4EE3;&#x7801;&#x662F;&#x9759;&#x6001;&#x7684;&#xFF0C;&#x53EA;&#x6709;&#x6D4B;&#x8BD5;&#x4EBA;&#x5458;&#x624B;&#x5DE5;&#x6D4B;&#x8BD5;&#x624D;&#x80FD;&#x53D1;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x751A;&#x81F3;&#x6709;&#x7684;&#x65F6;&#x5019;&#x6839;&#x672C;&#x5C31;&#x4E0D;&#x77E5;&#x9053;&#x662F;&#x5426;&#x80FD;&#x591F;&#x7F16;&#x8BD1;&#x51FA;&#x4E00;&#x4E2A;&#x53EF;&#x6D4B;&#x8BD5;&#x7684;&#x7A0B;&#x5E8F;</p>
+</li>
+<li><p>&#x6240;&#x6709;&#x7684;&#x6D4B;&#x8BD5;&#x4F9D;&#x8D56;&#x624B;&#x5DE5;&#x6D4B;&#x8BD5;&#xFF0C;&#x5927;&#x91CF;&#x7684;&#x6D4B;&#x8BD5;&#x6D3B;&#x52A8;&#x91CD;&#x590D;&#x8FDB;&#x884C;&#xFF1B;</p>
+</li>
+<li><p>&#x5927;&#x578B;&#x56E2;&#x961F;&#x5927;&#x5BB6;&#x76F8;&#x4E92;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5F88;&#x5F3A;&#xFF0C;&#x4F46;&#x662F;&#x5374;&#x4E0D;&#x80FD;&#x786E;&#x5B9A;&#x81EA;&#x5DF1;&#x662F;&#x5426;&#x57FA;&#x4E8E;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x548C;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x7248;&#x672C;&#x4E0A;&#x5F00;&#x53D1;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x4E0D;&#x80FD;&#x53CA;&#x65F6;&#x53D1;&#x73B0;&#xFF1B;</p>
+</li>
+</ul>
+<h2 id="3">&#x6301;&#x7EED;&#x96C6;&#x6210;&#x7684;&#x597D;&#x5904;</h2>
+
+<p>1.&#x9891;&#x7E41;&#x68C0;&#x51FA;&#x4EE3;&#x7801;&#x3002;
+&#x6709;&#x65F6;&#x5019;&#x4EE3;&#x7801;&#x51B2;&#x7A81;&#x65E0;&#x53EF;&#x907F;&#x514D;&#xFF0C;&#x9891;&#x7E41;&#x68C0;&#x51FA;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x672C;&#x5730;&#x7684;&#x526F;&#x672C;&#x548C;&#x4EE3;&#x7801;&#x5E93;&#x4E2D;&#x7684;&#x7248;&#x672C;&#x6700;&#x5C0F;&#x5DEE;&#x5F02;&#x5316;&#x3002;</p>
+<p>2.&#x9891;&#x7E41;&#x63D0;&#x4EA4;&#x4EE3;&#x7801;&#x3002;
+&#x4E0E;1&#x7684;&#x539F;&#x7406;&#x7C7B;&#x4F3C;&#xFF0C;&#x9891;&#x7E41;&#x63D0;&#x4EA4;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x5176;&#x4ED6;&#x4EBA;&#x68C0;&#x51FA;&#x526F;&#x672C;&#x548C;&#x4EE3;&#x7801;&#x5E93;&#x4E2D;&#x7684;&#x7248;&#x672C;&#x6700;&#x5C0F;&#x5DEE;&#x5F02;&#x5316;&#x3002;</p>
+<p>3.&#x51CF;&#x5C11;&#x5206;&#x652F;&#xFF0C;&#x56DE;&#x5F52;&#x4E3B;&#x5E72;&#x3002;
+&#x591A;&#x4E2A;&#x5206;&#x652F;&#x5E76;&#x884C;&#x5E94;&#x53CA;&#x65E9;&#x5C06;&#x53D8;&#x66F4;&#x96C6;&#x6210;&#x5230;&#x4E3B;&#x5E72;&#x4E2D;&#xFF0C;&#x907F;&#x514D;&#x540C;&#x65F6;&#x7EF4;&#x62A4;&#x8F6F;&#x4EF6;&#x7684;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x3002;</p>
+<p>4.&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x5316;&#x6784;&#x5EFA;&#x3002;
+&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Maven&#x3001;Ant&#x7B49;&#x6765;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5316;&#x6784;&#x5EFA;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x4E2D;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x3002;&#x524D;&#x63D0;&#x662F;&#x6709;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x3002;</p>
+<p>5.&#x63D0;&#x4EA4;&#x6D4B;&#x8BD5;&#x3002;
+&#x5728;&#x63D0;&#x4EA4;&#x5DE5;&#x4F5C;&#x4E4B;&#x524D;&#xFF0C;&#x6BCF;&#x4E2A;&#x7A0B;&#x5E8F;&#x5458;&#x5FC5;&#x987B;&#x672C;&#x5730;&#x96C6;&#x6210;&#x6240;&#x6709;&#x4EE3;&#x7801;&#xFF0C;&#x505A;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x6240;&#x6709;&#x7684;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#xFF0C;&#x8FD9;&#x6837;&#x80FD;&#x51CF;&#x5C11;&#x96C6;&#x6210;&#x6D4B;&#x8BD5;&#x5728;&#x96C6;&#x6210;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6784;&#x5EFA;&#x5931;&#x8D25;&#x7684;&#x98CE;&#x9669;&#x3002;</p>
+<p>6.&#x5F53;&#x524D;&#x72B6;&#x6001;&#x5BF9;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x53EF;&#x89C1;&#x3002;
+&#x96C6;&#x6210;&#x670D;&#x52A1;&#x5668;&#x5728;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x8FC7;&#x7A0B;&#x4E2D;&#x53D1;&#x73B0;&#x95EE;&#x9898;&#x5E94;&#x53CA;&#x65F6;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x548C;&#x77ED;&#x4FE1;&#x7ED9;&#x76F8;&#x5173;&#x7684;&#x5E72;&#x7CFB;&#x4EBA;&#x3002;</p>
+<p>7.&#x5982;&#x679C;&#x53D1;&#x73B0;&#x6709;&#x4EE3;&#x7801;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;revert&#x6389;&#x67D0;&#x4E2A;&#x4EBA;&#x7684;&#x63D0;&#x4EA4;</p>
+<p>8.&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x90E8;&#x7F72;&#x5230;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x81EA;&#x52A8;&#x5316;&#x7684;&#x3002;</p>
+<p>9.&#x53EF;&#x4EE5;&#x505A;&#x5F88;&#x591A;&#x7684;&#x9759;&#x6001;&#x68C0;&#x67E5;&#xFF0C;&#x6BD4;&#x5982;&#x5708;&#x590D;&#x6742;&#x5EA6;&#x3001;&#x6D4B;&#x8BD5;&#x8986;&#x76D6;&#x7387;&#x3001;cpp pclint&#x7B49;&#x7B49;&#xFF0C;&#x54E6;&#x592A;&#x591A;&#x4E30;&#x5BCC;&#x7684;&#x63D2;&#x4EF6;&#x53BB;&#x5E2E;&#x5927;&#x5BB6;&#x7BA1;&#x7406;&#x4EE3;&#x7801;&#x4E86;&#x3002;
+&#x6765;&#x4E2A;thrift&#x7684;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x56FE;&#x5427;&#xFF1A;
+<a href="https://travis-ci.org/apache/thrift" target="_blank">https://travis-ci.org/apache/thrift</a></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter5/5.2_gtest单元测试.html" class="navigation navigation-prev " aria-label="Previous page: gtest单元测试"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter6/index.html" class="navigation navigation-next " aria-label="Next page: 产品版本管理之git"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"theme-default":{"showLevel":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
